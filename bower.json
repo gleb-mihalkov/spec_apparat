@@ -1,0 +1,25 @@
+{
+  "name": "spec_apparat",
+  "description": "Верстка для проекта spec_apparat.",
+  "main": "gulpfile.js",
+  "authors": [
+    "gleb-mihalkov"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "skeleton"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "stylus-short": "https://github.com/gleb-mihalkov/stylus-short.git",
+    "normalize-css": "https://github.com/necolas/normalize.css.git#^4.2.0",
+    "jquery": "^2.0.0"
+  }
+}
