@@ -427,11 +427,32 @@ textarea {
   width: 100%;
 }
 .global__content {
-  padding-bottom: 100px;
+  padding-bottom: 340px;
 }
 .global__footer {
-  height: 100px;
+  height: 340px;
   width: 100%;
   position: absolute;
   bottom: 0px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1180px;
+}
+.row:before,
+.row:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.row__item {
+  min-height: 1px;
+  float: left;
+}
+.row__item--right {
+  float: right;
+}
+.row--cols-3 .row__item {
+  width: 33.333333333333336%;
 }

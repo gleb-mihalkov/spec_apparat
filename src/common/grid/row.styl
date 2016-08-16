@@ -1,0 +1,15 @@
+.row
+  
+  &:before, &:after
+    display: table ''
+    clear: both
+    
+  &__item
+    min-height: 1px
+    float: left
+    
+    &--right
+      float: right
+  
+  &--cols-3 .row__item
+    width: (100% / 3)

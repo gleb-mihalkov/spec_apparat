@@ -1,0 +1,9 @@
+grid($space = 0px)
+  return unless $space > 0
+  
+  margin-right: -($space / 2)
+  margin-left: -($space / 2)
+  
+  & > .row__item
+    padding-right: ($space / 2)
+    padding-left: ($space / 2)
