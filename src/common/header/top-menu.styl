@@ -1,1 +1,28 @@
-// Блок верхнего меню.
+.top-menu
+  background: linear-gradient(to top, #0c7bc9, #1cb7d0)
+  box-shadow: 0px 2px 5px 0px rgba($color__blue--dark, 0.74)
+  
+  .menu
+    flex-box: space-between false center
+    
+    &__item
+      padding-top: 22px
+      height: 67px
+      text: center
+      flex: auto
+      
+      &.active
+        background: $color__white
+        
+        .menu__title
+          border-bottom: $color__yellow 2px
+          text: $color__yellow
+          padding-bottom: 4px
+      
+    &__title
+      text: bold $color__white 20px 1
+      display: inline-block
+      
+      &:hover
+        text: $color__yellow
+      

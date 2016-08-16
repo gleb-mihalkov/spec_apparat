@@ -1,0 +1,15 @@
+.top
+  $base = 110px
+  $item = 46px
+  $b-item = 82px
+  $offset = ($base - $item) / 2
+  $s-offset = ($base - $b-item) / 2
+  height: $base
+  
+  &__item
+    padding-top: $offset
+    margin-left: 20px
+    
+    &--primary
+      padding-top: $s-offset
+  
