@@ -429,6 +429,27 @@ textarea {
 *:focus {
   outline: none;
 }
+html,
+body {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 100%;
+}
+html {
+  height: 100%;
+}
+body {
+  color: #363636;
+  font-size: 16px;
+  line-height: 1.25;
+  font-family: 'Roboto', 'sans';
+}
 .global {
   position: relative;
   min-height: 100%;
