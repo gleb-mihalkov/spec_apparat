@@ -421,6 +421,14 @@ textarea {
   font: inherit; /* 2 */
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
 .global {
   position: relative;
   min-height: 100%;
