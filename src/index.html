@@ -6,8 +6,28 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body class="global">
-  <div class="global__content"></div>
-  <div class="global__footer"></div>
+  <div class="global__content">
+    <header class="header">
+      <!--=include common/header/top.html -->
+      <!--=include common/header/top-menu.html -->
+      <!--=include common/header/top-lead.html -->
+      <!--=include common/header/top-grid.html -->
+    </header>
+    <section class="content content--main">
+      <main class="container">
+        <!--=include article/about-article.html -->
+      </main>
+      <aside class="container">
+        <!--=include blog/blog-grid.html -->
+      </aside>
+      <aside class="container">
+        <!--=include article/contacts-article.html -->
+      </aside>
+    </section>
+  </div>
+  <footer class="global__footer  footer">
+    <!--=include common/footer/footer.html -->
+  </footer>
   <script src="scripts.js"></script>
 </body>
 </html>
