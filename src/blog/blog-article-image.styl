@@ -1,0 +1,21 @@
+.blog-article-image
+  position: relative
+  
+  &__image
+    background: center cover
+    position: 0px
+    
+  &__over
+    background: linear-gradient(to top, #0c7bc9, #1cb7d0)
+    transition: all .25s ease-in-out
+    position: 0px
+    opacity: 0
+    
+    &:hover
+      opacity: 0.8
+      
+    &:before
+      display: block 180px 40px 'Подробнее'
+      text: center $color__white 20px 40px
+      border: $color__white false 2px
+      position: center middle
