@@ -2,6 +2,10 @@
   background: left center
   display: block
   
+  &__inner
+    vertical-align: middle
+    display: inline-block
+  
   &--dark
     text: medium 16px 23px
     padding-left: 40px
@@ -12,3 +16,27 @@
   
     &.contact--email
       background: url('img/blue-email.png')
+      
+  &--large
+    display: block 100% 80px
+    padding-left: 100px
+    background: left center
+    text: medium 20px 28px
+    link: black
+    margin-bottom: 40px
+    
+    &:before
+      display: inline-block 0px 80px ''
+      vertical-align: middle
+    
+    &:last-child
+      margin-bottom: 0px
+    
+    &.contact--address
+      background: url('img/large-address.png')
+      
+    &.contact--phone
+      background: url('img/large-phone.png')
+    
+    &.contact--email
+      background: url('img/large-email.png')

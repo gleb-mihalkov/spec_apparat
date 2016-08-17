@@ -1,0 +1,22 @@
+.button
+  background: transparent
+  text: center 16px 40px
+  padding: 0px 20px
+  border: none 2px
+  
+  &--primary
+    background: $color__yellow
+    text: medium $color__white
+    
+  &--send
+    
+    &:before
+      display: inline-block 18px ''
+      background: center
+      vertical-align: middle
+      margin-right: 8px
+  
+  &--send:before
+    background: url('img/send.png')
+    position: relative
+    top: -2px

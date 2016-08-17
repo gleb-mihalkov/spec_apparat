@@ -641,6 +641,9 @@ button,
 input {
   font-family: inherit;
 }
+textarea {
+  resize: vertical;
+}
 .global {
   position: relative;
   min-height: 100%;
@@ -708,6 +711,10 @@ input {
   background-position: left center;
   display: block;
 }
+.contact__inner {
+  vertical-align: middle;
+  display: inline-block;
+}
 .contact--dark {
   font-weight: 500;
   font-size: 16px;
@@ -729,8 +736,175 @@ input {
   background-repeat: no-repeat;
   background-image: url("img/blue-email.png");
 }
+.contact--large {
+  display: block;
+  height: 80px;
+  width: 100%;
+  padding-left: 100px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #363636;
+  margin-bottom: 40px;
+}
+.contact--large:hover {
+  color: #1cb7d0;
+}
+.contact--large:active {
+  color: #184f6b;
+}
+.contact--large:before {
+  display: inline-block;
+  content: '';
+  height: 80px;
+  width: 0px;
+  vertical-align: middle;
+}
+.contact--large:last-child {
+  margin-bottom: 0px;
+}
+.contact--large.contact--address {
+  background-repeat: no-repeat;
+  background-image: url("img/large-address.png");
+}
+.contact--large.contact--phone {
+  background-repeat: no-repeat;
+  background-image: url("img/large-phone.png");
+}
+.contact--large.contact--email {
+  background-repeat: no-repeat;
+  background-image: url("img/large-email.png");
+}
 .content {
+  background-repeat: no-repeat;
+  background-image: url("img/content-bg.png");
+  background-position: center bottom;
   padding-top: 20px;
+}
+.blue-bg {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to top, #0c7bc9, #1cb7d0);
+}
+.blue-bg:before {
+  background-repeat: repeat;
+  background-image: url("img/top-grid-bg.png");
+  display: block;
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+.input {
+  display: inline-block;
+  width: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #c5c5c5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.input--company,
+.input--phone,
+.input--email,
+.input--name,
+.input--note {
+  background-repeat: no-repeat;
+  background-position: 11px 11px;
+  padding-left: 40px;
+}
+.input--company {
+  background-repeat: no-repeat;
+  background-image: url("img/case.png");
+}
+.input--phone {
+  background-repeat: no-repeat;
+  background-image: url("img/call.png");
+}
+.input--email {
+  background-repeat: no-repeat;
+  background-image: url("img/letter.png");
+}
+.input--name {
+  background-repeat: no-repeat;
+  background-image: url("img/person.png");
+}
+.input--note {
+  background-repeat: no-repeat;
+  background-image: url("img/pen.png");
+}
+.button {
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  border-radius: 2px;
+  border: none;
+}
+.button--primary {
+  background-repeat: no-repeat;
+  background-color: #ffc800;
+  color: #fff;
+  font-weight: 500;
+}
+.button--send:before {
+  display: inline-block;
+  content: '';
+  height: 18px;
+  width: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.button--send:before {
+  background-repeat: no-repeat;
+  background-image: url("img/send.png");
+  position: relative;
+  top: -2px;
+}
+.form__title,
+.form__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form__title:last-child,
+.form__item:last-child {
+  margin-bottom: 0px;
+}
+.form__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.form__title--request {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 46px;
+  height: 37px;
+}
+.form__title--request:after {
+  display: inline-block;
+  content: '';
+  height: 37px;
+  width: 0px;
+  vertical-align: bottom;
+}
+.form__title--request {
+  background-repeat: no-repeat;
+  background-image: url("img/request.png");
+}
+.form__item--right {
+  text-align: right;
 }
 .top {
   height: 110px;
@@ -882,24 +1056,11 @@ input {
   width: 480px;
 }
 .top-grid {
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to top, #0c7bc9, #1cb7d0);
   padding-top: 65px;
   padding-right: 0;
   padding-bottom: 45px;
   padding-left: 0;
   position: relative;
-}
-.top-grid:before {
-  background-repeat: repeat;
-  background-image: url("img/top-grid-bg.png");
-  display: block;
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
-  top: 0px;
 }
 .top-grid .container {
   position: relative;
@@ -952,6 +1113,27 @@ input {
   background-position: right bottom;
   padding-right: 470px;
   min-height: 650px;
+}
+.contacts-article {
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.contacts-article .heading {
+  margin-bottom: 40px;
+}
+.contacts-article__main {
+  width: 400px;
+}
+.contacts-article__form {
+  box-shadow: 0px 2px 3px rgba(24,79,107,0.48);
+  background-repeat: no-repeat;
+  background-color: #eaf8ff;
+  border: 1px solid #ececec;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 45px;
+  padding-left: 40px;
+  width: 780px;
 }
 .blog-grid {
   margin-right: -10px;
