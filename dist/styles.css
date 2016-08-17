@@ -1073,7 +1073,7 @@ textarea {
   background-image: url("img/top-lead-bg.jpg");
   background-position: center center;
   background-size: cover;
-  height: 430px;
+  height: 450px;
 }
 .top-lead__inner {
   position: relative;
@@ -1082,7 +1082,7 @@ textarea {
   position: absolute;
   left: 0px;
   top: 0px;
-  padding-top: 60px;
+  padding-top: 70px;
   width: 710px;
 }
 .top-lead__aside {

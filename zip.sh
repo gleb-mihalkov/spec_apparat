@@ -10,6 +10,6 @@ else
   NAME="spec_apparat_dist_${STAMP}.zip"
   (cd dist; zip -r "../${NAME}" .)
 fi
-echo -e "\n==> File created: ${NAME}"
+echo -e "\n==> File created: ${NAME}\n"
 
   
