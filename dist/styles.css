@@ -650,10 +650,10 @@ textarea {
   width: 100%;
 }
 .global__content {
-  padding-bottom: 340px;
+  padding-bottom: 360px;
 }
 .global__footer {
-  height: 340px;
+  height: 360px;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -695,6 +695,14 @@ textarea {
   line-height: 40px;
   padding-top: 30px;
 }
+.heading--footer-logo {
+  background-repeat: no-repeat;
+  background-image: url("img/bottom-logo.png");
+  background-position: left center;
+  font-size: 0px;
+  min-width: 180px;
+  height: 54px;
+}
 .menu {
   list-style: none;
   padding-top: 0px;
@@ -735,6 +743,32 @@ textarea {
 .contact--dark.contact--email {
   background-repeat: no-repeat;
   background-image: url("img/blue-email.png");
+}
+.contact--light {
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 30px;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+.contact--light:hover {
+  color: #ffc800;
+}
+.contact--light:active {
+  color: #cca000;
+}
+.contact--light.contact--address {
+  background-repeat: no-repeat;
+  background-image: url("img/light-address.png");
+}
+.contact--light.contact--phone {
+  background-repeat: no-repeat;
+  background-image: url("img/light-phone.png");
+}
+.contact--light.contact--email {
+  background-repeat: no-repeat;
+  background-image: url("img/light-email.png");
 }
 .contact--large {
   display: block;
@@ -797,6 +831,9 @@ textarea {
   right: 0px;
   left: 0px;
   top: 0px;
+}
+.blue-bg > .container {
+  position: relative;
 }
 .input {
   display: inline-block;
@@ -1062,9 +1099,6 @@ textarea {
   padding-left: 0;
   position: relative;
 }
-.top-grid .container {
-  position: relative;
-}
 .top-article {
   color: #fff;
   font-size: 16px;
@@ -1106,6 +1140,83 @@ textarea {
   padding-left: 100px;
   background-repeat: no-repeat;
   background-position: left top;
+}
+.footer {
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+.footer a {
+  color: #fff;
+}
+.footer a:hover {
+  color: #ffc800;
+}
+.footer a:active {
+  color: #cca000;
+}
+.footer p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.footer__item {
+  padding-right: 20px;
+}
+.footer__item:last-child {
+  padding-right: 0px;
+}
+.footer__item--short {
+  max-width: 210px;
+}
+.footer__item--shift {
+  position: relative;
+  left: -30px;
+}
+.footer__item--shift .heading {
+  position: relative;
+  left: 30px;
+}
+.footer__item--t-shift {
+  position: relative;
+  top: -16px;
+}
+.footer-menu .menu {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 85px;
+  width: 360px;
+}
+.footer-menu .menu__item {
+  padding-left: 20px;
+  padding-top: 16px;
+  max-width: 180px;
+}
+.footer-menu .menu__item:nth-child(1),
+.footer-menu .menu__item:nth-child(2),
+.footer-menu .menu__item:nth-child(3) {
+  padding-left: 0px;
+}
+.footer-menu .menu__item:nth-child(1),
+.footer-menu .menu__item:nth-child(4) {
+  padding-top: 0px;
+}
+.footer-menu--primary {
+  font-size: 12px;
+}
+.footer-menu--primary .menu {
+  height: 195px;
 }
 .about-article {
   background-repeat: no-repeat;
