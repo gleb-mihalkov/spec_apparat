@@ -650,10 +650,10 @@ textarea {
   width: 100%;
 }
 .global__content {
-  padding-bottom: 360px;
+  padding-bottom: 400px;
 }
 .global__footer {
-  height: 360px;
+  height: 400px;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -1167,20 +1167,33 @@ textarea {
 .footer__item:last-child {
   padding-right: 0px;
 }
-.footer__item--short {
+.footer__item--contacts,
+.footer__item--about {
   max-width: 210px;
 }
-.footer__item--shift {
-  position: relative;
-  left: -30px;
-}
-.footer__item--shift .heading {
-  position: relative;
-  left: 30px;
-}
-.footer__item--t-shift {
+.footer__item--about {
   position: relative;
   top: -16px;
+}
+.footer__item--navigation,
+.footer__item--contacts {
+  position: relative;
+}
+.footer__item--navigation .heading,
+.footer__item--contacts .heading {
+  position: relative;
+}
+.footer__item--navigation {
+  left: -20px;
+}
+.footer__item--navigation .heading {
+  left: 20px;
+}
+.footer__item--contacts {
+  left: -30px;
+}
+.footer__item--contacts .heading {
+  left: 30px;
 }
 .footer-menu .menu {
   display: -webkit-flex;
@@ -1196,7 +1209,7 @@ textarea {
   -ms-flex-pack: start;
   justify-content: flex-start;
   height: 85px;
-  width: 360px;
+  width: 340px;
 }
 .footer-menu .menu__item {
   padding-left: 20px;
@@ -1216,7 +1229,15 @@ textarea {
   font-size: 12px;
 }
 .footer-menu--primary .menu {
-  height: 195px;
+  height: 240px;
+  width: 360px;
+}
+.footer-menu--primary .menu__title {
+  background-repeat: repeat-y;
+  background-image: url("img/v-border.png");
+  background-position: left top;
+  display: inline-block;
+  padding-left: 20px;
 }
 .about-article {
   background-repeat: no-repeat;
