@@ -21,6 +21,18 @@ a
   transition: all .25s ease-in-out
   text: none $color__blue
   
+p, h1, h2, h3, h4, h5, h6, ul, ol, dl, table
+  
+  &:first-child
+    margin-top: 0px !important
+    
+  &:last-child
+    margin-bottom: 0px !important
+    
+p, ul, ol, dl, table
+  margin: 26px false
+  
+  
 textarea
 button
 input
