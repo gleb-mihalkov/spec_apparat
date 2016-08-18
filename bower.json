@@ -20,6 +20,7 @@
   "dependencies": {
     "stylus-short": "https://github.com/gleb-mihalkov/stylus-short.git",
     "normalize-css": "https://github.com/necolas/normalize.css.git#^4.2.0",
-    "jquery": "^2.0.0"
+    "jquery": "^2.0.0",
+    "three.js": "https://github.com/mrdoob/three.js.git"
   }
 }

@@ -1084,6 +1084,7 @@ textarea {
   top: 0px;
   padding-top: 70px;
   width: 710px;
+  z-index: 2;
 }
 .top-lead__aside {
   position: absolute;
