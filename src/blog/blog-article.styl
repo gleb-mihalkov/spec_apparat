@@ -1,7 +1,39 @@
 .blog-article
   
   &__image
-    display: block 100% 236px
+    display: block 100% 240px
+    background: cover center
+    position: relative
     
-  &__content
-    padding-top: 20px
+    &:before, &:after
+      transition: opacity .25s ease-in-out
+      opacity: 0
+    
+    &:before
+      background: $color__blue--gradient
+      position: top left
+      display: block 100% 100% ''
+     
+    &:after
+      border: $color__blue--light false 2px
+      text: center 20px 40px $color__white
+      display: block 180px 40px 'Подробнее'
+      padding: 0px 40px
+      position: middle center
+      
+    &:hover
+      
+      &:before, &:after
+        opacity: 0.8
+        
+  &__date
+    text: italic 16px 20px $color__grey
+    margin-top: 20px
+    
+  &__title
+    text: medium 24px 28px
+    margin-bottom: 0px
+    margin-top: 4px
+    
+    a
+      link: black

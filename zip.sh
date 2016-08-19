@@ -11,5 +11,3 @@ else
   (cd dist; zip -r "../${NAME}" .)
 fi
 echo -e "\n==> File created: ${NAME}\n"
-
-  
